@@ -1,0 +1,6 @@
+# ignore
+*.log
+*.DS_Store
+/node_modules
+/index*.js
+/Helpers*.js

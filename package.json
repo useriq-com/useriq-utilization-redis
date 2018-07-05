@@ -1,0 +1,30 @@
+{
+  "name": "useriq-utilization-redis",
+  "version": "1.0.0",
+  "description": "Watches redis memory utilization and initiates a restart if needed.",
+  "main": "./index.js",
+  "engines": {
+    "node": "8.11.2"
+  },
+  "scripts": {
+    "start": "node forever",
+    "postinstall": "gulp build",
+    "test": "mocha --require babel-core/register --recursive './src/**/*.spec.js'"
+  },
+  "author": "Lance Whatley",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "forever-monitor": "^1.7.1",
+    "gulp": "latest",
+    "gulp-babel": "latest",
+    "gulp-plumber": "^1.1.0",
+    "minimist": "^1.2.0",
+    "ps-node": "^0.1.6",
+    "utilization-listener": "^0.1.4"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
